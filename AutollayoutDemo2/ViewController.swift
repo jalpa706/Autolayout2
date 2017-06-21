@@ -9,7 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var my: UIImageView!
+    @IBOutlet weak var MyImageView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -20,6 +21,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    
+    @IBAction func ClickHere(_ sender: UIButton) {
+        
+       let title=sender.currentTitle
+        print("Button click : ",title)
+        
+        self.MyImageView.image=UIImage(named:title!)
+        
+    
+        print("Function worked")
+    }
 }
+
+
 

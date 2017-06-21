@@ -413,7 +413,6 @@
 		05D0AFED1EFAA77A00BFC532 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutollayoutDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ram.demo.AutollayoutDemo2;
@@ -425,7 +424,6 @@
 		05D0AFEE1EFAA77A00BFC532 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AutollayoutDemo2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ram.demo.AutollayoutDemo2;
@@ -507,6 +505,7 @@
 				05D0AFEE1EFAA77A00BFC532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05D0AFEF1EFAA77A00BFC532 /* Build configuration list for PBXNativeTarget "AutollayoutDemo2Tests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +514,7 @@
 				05D0AFF11EFAA77A00BFC532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05D0AFF21EFAA77A00BFC532 /* Build configuration list for PBXNativeTarget "AutollayoutDemo2UITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +523,7 @@
 				05D0AFF41EFAA77A00BFC532 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

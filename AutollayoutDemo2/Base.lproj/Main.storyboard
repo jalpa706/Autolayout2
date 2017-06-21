@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AutollayoutDemo2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,78 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UdZ-h9-78j">
+                                <rect key="frame" x="-4" y="637" width="127.5" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="LTH-29-Hjd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name=".SFNSDisplay" family=".SF NS Display" pointSize="20"/>
+                                <state key="normal" title="Kareena">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickHere:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q8e-CP-ZpX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SOM-qz-Cej">
+                                <rect key="frame" x="121.5" y="637" width="127.5" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Fpp-IF-qBC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Deepika">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickHere:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FQV-0s-uhd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f2s-mM-O1q">
+                                <rect key="frame" x="248" y="637" width="127" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TE6-D0-qS8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Priyanka">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="ClickHere:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ksR-zS-wRF"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3YS-Qj-eJS">
+                                <rect key="frame" x="16" y="20" width="343" height="617"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="f2s-mM-O1q" firstAttribute="leading" secondItem="SOM-qz-Cej" secondAttribute="trailing" constant="-1" id="1KS-DA-fg6"/>
+                            <constraint firstItem="UdZ-h9-78j" firstAttribute="width" secondItem="f2s-mM-O1q" secondAttribute="width" id="5UY-lD-B5r"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="f2s-mM-O1q" secondAttribute="bottom" id="97o-FL-G8t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="UdZ-h9-78j" secondAttribute="bottom" id="A7D-TS-m4t"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="f2s-mM-O1q" secondAttribute="trailing" constant="-16" id="AyY-pP-LLJ"/>
+                            <constraint firstItem="3YS-Qj-eJS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Eaf-9R-egT"/>
+                            <constraint firstItem="SOM-qz-Cej" firstAttribute="leading" secondItem="UdZ-h9-78j" secondAttribute="trailing" constant="-2" id="EnX-Te-kYI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3YS-Qj-eJS" secondAttribute="trailing" id="G4z-Kl-sZ4"/>
+                            <constraint firstItem="3YS-Qj-eJS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="H4B-OV-Qaf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="SOM-qz-Cej" secondAttribute="bottom" id="QOk-CK-Tcd"/>
+                            <constraint firstItem="UdZ-h9-78j" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="cmA-OT-XAr"/>
+                            <constraint firstItem="SOM-qz-Cej" firstAttribute="top" secondItem="3YS-Qj-eJS" secondAttribute="bottom" id="rSO-vc-SjC"/>
+                            <constraint firstItem="UdZ-h9-78j" firstAttribute="width" secondItem="SOM-qz-Cej" secondAttribute="width" id="suY-RL-dgf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="MyImageView" destination="3YS-Qj-eJS" id="o7l-Rd-yab"/>
+                        <outlet property="my" destination="3YS-Qj-eJS" id="vPh-3m-291"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1759" y="-893"/>
         </scene>
     </scenes>
 </document>
